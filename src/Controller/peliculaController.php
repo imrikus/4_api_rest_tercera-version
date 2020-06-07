@@ -17,7 +17,7 @@ class peliculaController
 {
     private $peliculaRepository;
 
-    public function __construct(PeliculaRepository $peliRepository)
+    public function __construct(PeliculaRepository $peliculaRepository)
     {
         $this->peliculaRepository = $peliculaRepository;
     }
