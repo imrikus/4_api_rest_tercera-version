@@ -60,7 +60,7 @@ class peliculaController
     }
 
     /**
-     * @Route("peliculass", name="get_all_peliculas", methods={"GET"})
+     * @Route("peliculas", name="get_all_peliculas", methods={"GET"})
      */
     public function getAll(): JsonResponse
     {

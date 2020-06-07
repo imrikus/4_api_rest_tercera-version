@@ -7,6 +7,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Doctrine\ORM\EntityManagerInterface;
 
+
 /**
  * @method Pelicula|null find($id, $lockMode = null, $lockVersion = null)
  * @method Pelicula|null findOneBy(array $criteria, array $orderBy = null)
@@ -15,7 +16,7 @@ use Doctrine\ORM\EntityManagerInterface;
  */
 class PeliculaRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(ManagerRegistry $registry,EntityManagerInterface $manager)
     {
         parent::__construct($registry, Pelicula::class);
         $this->manager = $manager;
